@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beers - Muxie Distributing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-transparent">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="Muxie-Logo.png" alt="Muxie Distributing">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="our-beers.html" class="nav-link">Our Beers</a></li>
+                <li><a href="diy-brewing.html" class="nav-link">DIY Brewing</a></li>
+                <li><a href="party-planning.html" class="nav-link">Party Planning</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="beer-catalog">
+        <section class="catalog-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="reveal-up">Our Premium Beer Selection</h1>
+                <p class="reveal-up">Discover our extensive collection of world-class beers</p>
+            </div>
+        </section>
+
+        <section class="beer-categories">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+                <button class="filter-btn" data-filter="light">Light</button>
+                <button class="filter-btn" data-filter="import">Imports</button>
+                <button class="filter-btn" data-filter="craft">Craft</button>
+                <button class="filter-btn" data-filter="seltzer">Seltzers</button>
+                <button class="filter-btn" data-filter="na">Non-Alcoholic</button>
+            </div>
+
+            <div class="beer-grid">
+                <!-- Premium Beers -->
+                <div class="beer-card" data-category="premium">
+                    <div class="beer-pattern budweiser">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Budweiser</h3>
+                        <p>The King of Beers</p>
+                        <div class="beer-details">
+                            <span>ABV: 5.0%</span>
+                            <span>Style: American Lager</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>Medium-bodied, flavorful, crisp American-style lager. Brewed with the best barley malt and premium hop varieties.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Light Beers -->
+                <div class="beer-card" data-category="light">
+                    <div class="beer-pattern bud-light">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Bud Light</h3>
+                        <p>Superior Light Beer</p>
+                        <div class="beer-details">
+                            <span>ABV: 4.2%</span>
+                            <span>Style: Light Lager</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A light-bodied beer with a fresh, clean taste and subtle hop aroma. Perfect for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beer-card" data-category="light">
+                    <div class="beer-pattern michelob">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Michelob ULTRA</h3>
+                        <p>Superior Light Beer</p>
+                        <div class="beer-details">
+                            <span>ABV: 4.2%</span>
+                            <span>Calories: 95</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A superior light beer brewed for those who go the extra mile. Low carbs, low calories, crisp taste.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Import Beers -->
+                <div class="beer-card" data-category="import">
+                    <div class="beer-pattern stella">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Stella Artois</h3>
+                        <p>Belgium's Finest</p>
+                        <div class="beer-details">
+                            <span>ABV: 5.0%</span>
+                            <span>Style: Belgian Pilsner</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A classic Belgian lager, featuring full flavor and a clean, crisp finish. Best served in its signature chalice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Craft Beers -->
+                <div class="beer-card" data-category="craft">
+                    <div class="beer-pattern shock-top">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Shock Top</h3>
+                        <p>Belgian-Style Wheat Ale</p>
+                        <div class="beer-details">
+                            <span>ABV: 5.2%</span>
+                            <span>Style: Belgian White</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A spiced Belgian-style wheat ale brewed with real orange, lemon and lime peels and coriander.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seltzers -->
+                <div class="beer-card" data-category="seltzer">
+                    <div class="beer-pattern bud-light-seltzer">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Bud Light Seltzer</h3>
+                        <p>Hard Seltzer</p>
+                        <div class="beer-details">
+                            <span>ABV: 5.0%</span>
+                            <span>Calories: 100</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A light and refreshing hard seltzer with pure sparkling water and natural flavors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Import Beers -->
+                <div class="beer-card" data-category="import">
+                    <div class="beer-pattern hoegaarden">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Hoegaarden</h3>
+                        <p>Original Belgian Wheat Beer</p>
+                        <div class="beer-details">
+                            <span>ABV: 4.9%</span>
+                            <span>Style: Belgian Witbier</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A unique Belgian wheat beer with notes of orange peel and coriander. Unfiltered for authentic taste.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beer-card" data-category="import">
+                    <div class="beer-pattern leffe">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Leffe Blonde</h3>
+                        <p>Belgian Abbey Beer</p>
+                        <div class="beer-details">
+                            <span>ABV: 6.6%</span>
+                            <span>Style: Belgian Blonde Ale</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>An authentic Belgian abbey beer with a rich history, featuring subtle notes of vanilla and clove.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Light Options -->
+                <div class="beer-card" data-category="light">
+                    <div class="beer-pattern michelob-ultra-pure">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Michelob ULTRA Pure Gold</h3>
+                        <p>Organic Light Beer</p>
+                        <div class="beer-details">
+                            <span>ABV: 3.8%</span>
+                            <span>Calories: 85</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>USDA certified organic light lager made with pure ingredients for a crisp, refreshing taste.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Premium Beers -->
+                <div class="beer-card" data-category="premium">
+                    <div class="beer-pattern busch">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Busch</h3>
+                        <p>Head for the Mountains</p>
+                        <div class="beer-details">
+                            <span>ABV: 4.3%</span>
+                            <span>Style: American Lager</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>A classic American-style lager with a clean, crisp taste and smooth finish.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Alcoholic Options -->
+                <div class="beer-card" data-category="na">
+                    <div class="beer-pattern bud-zero">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>Budweiser Zero</h3>
+                        <p>Zero Alcohol, Zero Compromise</p>
+                        <div class="beer-details">
+                            <span>ABV: 0.0%</span>
+                            <span>Calories: 50</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>Full-flavored, zero alcohol beer with the taste of Budweiser at 50 calories.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Seltzers -->
+                <div class="beer-card" data-category="seltzer">
+                    <div class="beer-pattern nutrl">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>NUTRL</h3>
+                        <p>Vodka Seltzer</p>
+                        <div class="beer-details">
+                            <span>ABV: 4.5%</span>
+                            <span>Calories: 100</span>
+                        </div>
+                        <div class="beer-description">
+                            <p>Made with vodka, sparkling water, and real fruit juice. Clean, refreshing taste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.reveal-up', { 
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            delay: 200,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const beerCards = document.querySelectorAll('.beer-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                
+                beerCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

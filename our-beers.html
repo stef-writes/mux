@@ -29,246 +29,61 @@
         </nav>
     </header>
 
-    <main class="beer-catalog">
+    <main class="beers-page">
         <section class="catalog-hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1 class="reveal-up">Our Premium Beer Selection</h1>
-                <p class="reveal-up">Discover our extensive collection of world-class beers</p>
+                <h1 class="reveal-up">Our Beer Catalog</h1>
+                <p class="reveal-up">Discover our extensive collection of beers</p>
             </div>
         </section>
 
-        <section class="beer-categories">
-            <div class="category-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="premium">Premium</button>
-                <button class="filter-btn" data-filter="light">Light</button>
-                <button class="filter-btn" data-filter="import">Imports</button>
-                <button class="filter-btn" data-filter="craft">Craft</button>
-                <button class="filter-btn" data-filter="seltzer">Seltzers</button>
-                <button class="filter-btn" data-filter="na">Non-Alcoholic</button>
+        <section class="category-filters">
+            <div class="container">
+                <div class="filter-buttons reveal-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="domestic">Domestic</button>
+                    <button class="filter-btn" data-filter="imports">Imports</button>
+                    <button class="filter-btn" data-filter="craft">Craft</button>
+                </div>
             </div>
+        </section>
 
-            <div class="beer-grid">
-                <!-- Premium Beers -->
-                <div class="beer-card" data-category="premium">
-                    <div class="beer-pattern budweiser">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Budweiser</h3>
-                        <p>The King of Beers</p>
-                        <div class="beer-details">
-                            <span>ABV: 5.0%</span>
-                            <span>Style: American Lager</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>Medium-bodied, flavorful, crisp American-style lager. Brewed with the best barley malt and premium hop varieties.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Light Beers -->
-                <div class="beer-card" data-category="light">
-                    <div class="beer-pattern bud-light">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Bud Light</h3>
-                        <p>Superior Light Beer</p>
-                        <div class="beer-details">
-                            <span>ABV: 4.2%</span>
-                            <span>Style: Light Lager</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A light-bodied beer with a fresh, clean taste and subtle hop aroma. Perfect for any occasion.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="beer-card" data-category="light">
-                    <div class="beer-pattern michelob">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Michelob ULTRA</h3>
-                        <p>Superior Light Beer</p>
-                        <div class="beer-details">
-                            <span>ABV: 4.2%</span>
-                            <span>Calories: 95</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A superior light beer brewed for those who go the extra mile. Low carbs, low calories, crisp taste.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Import Beers -->
-                <div class="beer-card" data-category="import">
-                    <div class="beer-pattern stella">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Stella Artois</h3>
-                        <p>Belgium's Finest</p>
-                        <div class="beer-details">
-                            <span>ABV: 5.0%</span>
-                            <span>Style: Belgian Pilsner</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A classic Belgian lager, featuring full flavor and a clean, crisp finish. Best served in its signature chalice.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Craft Beers -->
-                <div class="beer-card" data-category="craft">
-                    <div class="beer-pattern shock-top">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Shock Top</h3>
-                        <p>Belgian-Style Wheat Ale</p>
-                        <div class="beer-details">
-                            <span>ABV: 5.2%</span>
-                            <span>Style: Belgian White</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A spiced Belgian-style wheat ale brewed with real orange, lemon and lime peels and coriander.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Seltzers -->
-                <div class="beer-card" data-category="seltzer">
-                    <div class="beer-pattern bud-light-seltzer">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Bud Light Seltzer</h3>
-                        <p>Hard Seltzer</p>
-                        <div class="beer-details">
-                            <span>ABV: 5.0%</span>
-                            <span>Calories: 100</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A light and refreshing hard seltzer with pure sparkling water and natural flavors.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- More Import Beers -->
-                <div class="beer-card" data-category="import">
-                    <div class="beer-pattern hoegaarden">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Hoegaarden</h3>
-                        <p>Original Belgian Wheat Beer</p>
-                        <div class="beer-details">
-                            <span>ABV: 4.9%</span>
-                            <span>Style: Belgian Witbier</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A unique Belgian wheat beer with notes of orange peel and coriander. Unfiltered for authentic taste.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="beer-card" data-category="import">
-                    <div class="beer-pattern leffe">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Leffe Blonde</h3>
-                        <p>Belgian Abbey Beer</p>
-                        <div class="beer-details">
-                            <span>ABV: 6.6%</span>
-                            <span>Style: Belgian Blonde Ale</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>An authentic Belgian abbey beer with a rich history, featuring subtle notes of vanilla and clove.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- More Light Options -->
-                <div class="beer-card" data-category="light">
-                    <div class="beer-pattern michelob-ultra-pure">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Michelob ULTRA Pure Gold</h3>
-                        <p>Organic Light Beer</p>
-                        <div class="beer-details">
-                            <span>ABV: 3.8%</span>
-                            <span>Calories: 85</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>USDA certified organic light lager made with pure ingredients for a crisp, refreshing taste.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Premium Beers -->
-                <div class="beer-card" data-category="premium">
-                    <div class="beer-pattern busch">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Busch</h3>
-                        <p>Head for the Mountains</p>
-                        <div class="beer-details">
-                            <span>ABV: 4.3%</span>
-                            <span>Style: American Lager</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>A classic American-style lager with a clean, crisp taste and smooth finish.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Non-Alcoholic Options -->
-                <div class="beer-card" data-category="na">
-                    <div class="beer-pattern bud-zero">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>Budweiser Zero</h3>
-                        <p>Zero Alcohol, Zero Compromise</p>
-                        <div class="beer-details">
-                            <span>ABV: 0.0%</span>
-                            <span>Calories: 50</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>Full-flavored, zero alcohol beer with the taste of Budweiser at 50 calories.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- More Seltzers -->
-                <div class="beer-card" data-category="seltzer">
-                    <div class="beer-pattern nutrl">
-                        <div class="beer-overlay"></div>
-                    </div>
-                    <div class="beer-content">
-                        <h3>NUTRL</h3>
-                        <p>Vodka Seltzer</p>
-                        <div class="beer-details">
-                            <span>ABV: 4.5%</span>
-                            <span>Calories: 100</span>
-                        </div>
-                        <div class="beer-description">
-                            <p>Made with vodka, sparkling water, and real fruit juice. Clean, refreshing taste.</p>
-                        </div>
-                    </div>
+        <section class="beers-section">
+            <div class="container">
+                <div id="beerGrid" class="beer-grid">
+                    <!-- Beer cards will be dynamically populated here -->
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <!-- Footer content -->
+        <div class="footer-content">
+            <div class="footer-logo reveal-up">
+                <img src="Muxie-Logo.png" alt="Muxie Distributing Co. Logo">
+            </div>
+            <div class="footer-links reveal-up">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-beers.html">Our Beers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social reveal-up">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Muxie Distributing Co. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -282,28 +97,114 @@
             easing: 'cubic-bezier(0.5, 0, 0, 1)'
         });
 
-        // Filter functionality
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const beerCards = document.querySelectorAll('.beer-card');
+        // Load and display beers
+        async function loadBeers() {
+            try {
+                const response = await fetch('beers-db.json');
+                const data = await response.json();
+                displayBeers(data);
+                setupFilters(data);
+            } catch (error) {
+                console.error('Error loading beers:', error);
+            }
+        }
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
-                btn.classList.add('active');
+        function displayBeers(data) {
+            const grid = document.getElementById('beerGrid');
+            grid.innerHTML = ''; // Clear existing content
 
-                const filter = btn.dataset.filter;
-                
-                beerCards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
+            // Display all categories
+            Object.entries(data).forEach(([category, categoryData]) => {
+                categoryData.beers.forEach(beer => {
+                    const card = createBeerCard(beer, category);
+                    grid.appendChild(card);
                 });
             });
+        }
+
+        function createBeerCard(beer, category) {
+            const card = document.createElement('div');
+            card.className = `beer-card ${category}`;
+            
+            let cardContent = '';
+            if (category === 'domestic' || category === 'imports') {
+                cardContent = `
+                    <div class="beer-pattern ${beer.brand.toLowerCase().replace(/[^a-z0-9]/g, '-')}">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>${beer.brand}</h3>
+                        <p class="beer-type">${beer.type}</p>
+                        <p class="beer-style">${beer.style}</p>
+                        ${beer.abv ? `<p class="beer-abv">ABV: ${beer.abv}</p>` : ''}
+                        ${beer.country ? `<p class="beer-country">Origin: ${beer.country}</p>` : ''}
+                        <div class="beer-hover">
+                            <span>${beer.description}</span>
+                        </div>
+                    </div>
+                `;
+            } else {
+                cardContent = `
+                    <div class="beer-pattern craft">
+                        <div class="beer-overlay"></div>
+                    </div>
+                    <div class="beer-content">
+                        <h3>${beer.brewery}</h3>
+                        <p class="beer-location">${beer.location}</p>
+                        <p class="beer-type">${beer.type}</p>
+                        <div class="beer-hover">
+                            <span>${beer.description}</span>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            card.innerHTML = cardContent;
+            return card;
+        }
+
+        function setupFilters(data) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.beer-card');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Filter cards
+                    const filter = button.getAttribute('data-filter');
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.classList.contains(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+        // Load beers when the page loads
+        document.addEventListener('DOMContentLoaded', loadBeers);
     </script>
 </body>
 </html> 

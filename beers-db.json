@@ -1,0 +1,228 @@
+{
+    "domestic": {
+        "title": "Domestic Beers",
+        "description": "Our selection of classic American beers",
+        "beers": [
+            {
+                "brand": "Budweiser",
+                "type": "Budweiser",
+                "style": "American Lager",
+                "abv": "5.0%",
+                "description": "The King of Beers, known for its crisp, clean taste"
+            },
+            {
+                "brand": "Bud Light",
+                "type": "Bud Light",
+                "style": "Light Lager",
+                "abv": "4.2%",
+                "description": "America's favorite light lager"
+            },
+            {
+                "brand": "Michelob",
+                "type": "Michelob Ultra",
+                "style": "Light Lager",
+                "abv": "4.2%",
+                "calories": "95",
+                "description": "Superior light beer with low carbs"
+            },
+            {
+                "brand": "Busch",
+                "type": "Busch Beer",
+                "style": "American Lager",
+                "abv": "4.3%",
+                "description": "Crisp and refreshing since 1955"
+            },
+            {
+                "brand": "Natural",
+                "type": "Natural Light",
+                "style": "Light Lager",
+                "abv": "4.2%",
+                "description": "Smooth, refreshing light beer"
+            },
+            {
+                "brand": "Miller",
+                "type": "Miller High Life",
+                "style": "American Lager",
+                "abv": "4.6%",
+                "description": "The Champagne of Beers"
+            },
+            {
+                "brand": "Miller",
+                "type": "Miller Lite",
+                "style": "Light Lager",
+                "abv": "4.2%",
+                "description": "Great taste, less filling"
+            },
+            {
+                "brand": "Milwaukee's Best",
+                "type": "Milwaukee's Best Light",
+                "style": "Light Lager",
+                "abv": "4.1%",
+                "description": "Premium light beer at a great value"
+            },
+            {
+                "brand": "Coors",
+                "type": "Coors Banquet",
+                "style": "American Lager",
+                "abv": "5.0%",
+                "description": "Brewed with Rocky Mountain water since 1873"
+            },
+            {
+                "brand": "Coors",
+                "type": "Coors Light",
+                "style": "Light Lager",
+                "abv": "4.2%",
+                "description": "The Silver Bullet"
+            },
+            {
+                "brand": "Keystone",
+                "type": "Keystone Light",
+                "style": "Light Lager",
+                "abv": "4.1%",
+                "description": "Always smooth, even when you're not"
+            },
+            {
+                "brand": "Yuengling",
+                "type": "Yuengling",
+                "style": "Traditional Lager",
+                "abv": "4.5%",
+                "description": "America's Oldest Brewery"
+            }
+        ]
+    },
+    "imports": {
+        "title": "Import Beers",
+        "description": "Premium beers from around the world",
+        "beers": [
+            {
+                "brand": "Peroni",
+                "country": "Italy",
+                "style": "Premium Lager",
+                "abv": "5.1%",
+                "description": "Italy's finest premium lager since 1963"
+            },
+            {
+                "brand": "Corona",
+                "country": "Mexico",
+                "style": "Pale Lager",
+                "abv": "4.6%",
+                "description": "Find your beach",
+                "distributor": "Crown Imports"
+            },
+            {
+                "brand": "Modelo",
+                "country": "Mexico",
+                "style": "Pilsner-style Lager",
+                "abv": "4.4%",
+                "description": "The beer with the fighting spirit",
+                "distributor": "Crown Imports"
+            },
+            {
+                "brand": "Hoegaarden",
+                "country": "Belgium",
+                "style": "Belgian Witbier",
+                "abv": "4.9%",
+                "description": "Original Belgian wheat beer"
+            },
+            {
+                "brand": "Foster's",
+                "country": "Australia",
+                "style": "Pale Lager",
+                "abv": "5.0%",
+                "description": "Australian for beer"
+            },
+            {
+                "brand": "Beck's",
+                "country": "Germany",
+                "style": "German Pilsner",
+                "abv": "5.0%",
+                "description": "German quality since 1873"
+            },
+            {
+                "brand": "Stella Artois",
+                "country": "Belgium",
+                "style": "Belgian Pilsner",
+                "abv": "5.0%",
+                "description": "Originally brewed as a Christmas beer"
+            }
+        ]
+    },
+    "craft": {
+        "title": "Craft Beers",
+        "description": "Innovative and artisanal craft brews",
+        "beers": [
+            {
+                "brewery": "Platform Beer Co.",
+                "location": "Ohio",
+                "type": "Independent",
+                "description": "Ohio's innovative craft brewery"
+            },
+            {
+                "brewery": "Goose Island Beer Co.",
+                "location": "Chicago, IL",
+                "type": "AB InBev owned",
+                "description": "Chicago's craft beer pioneer"
+            },
+            {
+                "brewery": "Elysian Brewing",
+                "location": "Seattle, WA",
+                "type": "AB InBev owned",
+                "description": "Seattle's creative brewing force"
+            },
+            {
+                "brewery": "Golden Road Brewing",
+                "location": "Los Angeles, CA",
+                "type": "AB InBev owned",
+                "description": "LA's craft beer innovator"
+            },
+            {
+                "brewery": "Breckenridge Brewery",
+                "location": "Colorado",
+                "type": "AB InBev owned",
+                "description": "Colorado mountain craft beer"
+            },
+            {
+                "brewery": "Devils Backbone Brewing",
+                "location": "Virginia",
+                "type": "AB InBev owned",
+                "description": "Virginia's adventure brewery"
+            },
+            {
+                "brewery": "Shock Top",
+                "location": "National",
+                "type": "AB InBev brand",
+                "description": "Belgian-style wheat ales"
+            },
+            {
+                "brewery": "Blue Moon Brewing Company",
+                "location": "Denver, CO",
+                "type": "Molson Coors owned",
+                "description": "Artfully crafted Belgian-style wheat beer"
+            },
+            {
+                "brewery": "Leinenkugel's",
+                "location": "Wisconsin",
+                "type": "Molson Coors owned",
+                "description": "Wisconsin's heritage brewery"
+            },
+            {
+                "brewery": "New Belgium Brewing",
+                "location": "Colorado",
+                "type": "Kirin owned",
+                "description": "Employee-owned until 2019, known for Fat Tire"
+            },
+            {
+                "brewery": "O'Fallon Brewery",
+                "location": "Missouri",
+                "type": "Independent",
+                "description": "St. Louis craft beer pioneers"
+            },
+            {
+                "brewery": "Millersburg Brewing Co.",
+                "location": "Ohio",
+                "type": "Independent",
+                "description": "Small-town Ohio craft excellence"
+            }
+        ]
+    }
+} 

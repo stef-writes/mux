@@ -850,121 +850,143 @@ footer {
 }
 
 /* About Page Styles */
+.about-page {
+    background-color: #fff;
+}
+
 .about-hero {
     height: 60vh;
-    background: var(--dark-color);
+    min-height: 400px;
+    background-image: url('Muxie-5-bwcolor-1100x825.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    color: #fff;
 }
 
-.about-intro {
-    padding: 4rem 0;
-    background-color: #fff;
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.intro-content {
+.hero-content {
+    position: relative;
+    z-index: 1;
     max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
+    padding: 0 20px;
 }
 
-.intro-content h2 {
-    margin-bottom: 2rem;
-    color: #1a1a1a;
-    font-size: 2.5rem;
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
 }
 
-.intro-content p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    color: #333;
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
 .company-history {
     padding: 4rem 0;
-    background-color: #f9f9f9;
 }
 
 .history-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.history-content h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.history-content h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin: 2.5rem 0 1.5rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .history-content p {
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
 
-.facility-showcase {
-    padding: 4rem 0;
-    background-color: #fff;
-}
-
-.facility-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.facility-features {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.facility-features li {
-    padding: 0.5rem 0;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.facility-features li:before {
-    content: "•";
-    color: #b71234;
-    position: absolute;
-    left: 0;
-}
-
-.company-values {
-    padding: 4rem 0;
-    background-color: #f9f9f9;
-}
-
-.company-quote {
-    max-width: 800px;
-    margin: 0 auto;
+.quote {
+    margin: 2.5rem 0;
     padding: 2rem;
-    font-style: italic;
+    background-color: #f9f9f9;
     border-left: 4px solid #b71234;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.company-quote footer {
-    margin-top: 1rem;
-    font-style: normal;
-    font-weight: bold;
+    font-style: italic;
     color: #1a1a1a;
 }
 
-/* Responsive adjustments */
+.quote footer {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #666;
+}
+
+.final-quote {
+    margin-top: 3rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #b71234;
+}
+
 @media (max-width: 768px) {
-    .intro-content h2,
-    .section-title {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .history-content h2 {
         font-size: 2rem;
     }
 
-    .facility-content,
-    .history-content,
-    .company-quote {
-        padding: 1rem;
+    .history-content h3 {
+        font-size: 1.5rem;
     }
 
-    .company-quote {
-        font-size: 0.9rem;
+    .history-content p {
+        font-size: 1rem;
+    }
+
+    .quote {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .history-content {
+        padding: 0 15px;
+    }
+
+    .quote {
+        padding: 1rem;
+        margin: 1.5rem 0;
     }
 }
 
@@ -1151,5 +1173,884 @@ footer {
         opacity: 1;
         padding-top: 0.75rem;
         margin-top: 0.75rem;
+    }
+}
+
+.contact-info {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.info-text > p:first-child {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hours-title, .contact-title {
+    color: #E31837;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+}
+
+.hours-container {
+    margin-bottom: 1.5rem;
+}
+
+.hours-row {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.hours-row .day {
+    width: 80px;
+    color: #333;
+}
+
+.hours-row .time {
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #333;
+}
+
+.contact-row .icon {
+    font-size: 1.25rem;
+    min-width: 24px;
+}
+
+.contact-row .address {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-notice {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-left: 4px solid #E31837;
+    background: #f8f8f8;
+}
+
+.donation-notice p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .hours-row {
+        font-size: 0.9rem;
+    }
+
+    .hours-row .day {
+        width: 60px;
+    }
+
+    .contact-row {
+        font-size: 0.9rem;
+    }
+}
+
+/* Party Planning Page Styles */
+.party-planning-page {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 80px 20px 0;
+}
+
+.party-planning-page h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.party-planning-page section {
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.party-planning-page section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.party-planning-page h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #E31837;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.party-planning-page h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #E31837;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+}
+
+.contact-section a {
+    color: #E31837;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #b71234;
+    text-decoration: underline;
+}
+
+.keg-guide-section {
+    text-align: center;
+}
+
+.keg-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.keg-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.keg-details {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+
+.keg-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.keg-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.keg-details li {
+    padding: 0.75rem 1rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-family: monospace;
+    transition: background-color 0.3s ease;
+}
+
+.keg-details li:hover {
+    background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .keg-info {
+        gap: 1.5rem;
+    }
+
+    .keg-details h3 {
+        font-size: 1.25rem;
+    }
+
+    .keg-details li {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+.party-checklist-section ul,
+.rental-section ul,
+.trailer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.party-checklist-section li,
+.rental-section li,
+.trailer-section li {
+    position: relative;
+    padding: 0.75rem 0 0.75rem 2rem;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.party-checklist-section li::before,
+.rental-section li::before,
+.trailer-section li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #E31837;
+    font-weight: bold;
+}
+
+.rental-section p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.payment-notice {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 12px;
+    border-left: 4px solid #E31837;
+    margin-bottom: 3rem;
+}
+
+.payment-notice p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .party-planning-page {
+        margin: 0 auto 40px;
+        padding: 60px 15px 0;
+    }
+    
+    .party-planning-page h1 {
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .party-planning-page h2 {
+        font-size: 1.75rem;
+    }
+
+    .party-planning-page section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-section p {
+        font-size: 1.1rem;
+    }
+
+    .keg-info ul {
+        grid-template-columns: 1fr;
+    }
+
+    .keg-info li,
+    .party-checklist-section li,
+    .rental-section li,
+    .trailer-section li,
+    .rental-section p {
+        font-size: 1rem;
+    }
+
+    .payment-notice {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* DIY Brewing Page Styles */
+.brewing-page {
+    background: #f9f9f9;
+}
+
+.brewing-hero {
+    height: 60vh;
+    min-height: 400px;
+    background-image: url('brewing-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.brewing-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.brewing-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.brewing-hero h1 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.brewing-hero p {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brewing-intro {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.brewing-intro .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.brewing-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.brewing-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.brewing-equipment,
+.ingredients-section,
+.brewing-process,
+.advanced-tips,
+.common-issues,
+.resources {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.brewing-equipment .container,
+.ingredients-section .container,
+.brewing-process .container,
+.advanced-tips .container,
+.common-issues .container,
+.resources .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.equipment-grid,
+.ingredients-grid,
+.process-grid,
+.tips-grid,
+.issues-grid,
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.equipment-card,
+.ingredient-card,
+.process-card,
+.tip-card,
+.issue-card,
+.resource-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipment-card:hover,
+.ingredient-card:hover,
+.process-card:hover,
+.tip-card:hover,
+.issue-card:hover,
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-card h3,
+.ingredient-card h3,
+.process-card h3,
+.tip-card h3,
+.issue-card h3,
+.resource-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #E31837;
+    margin-bottom: 1.5rem;
+}
+
+.equipment-card h4,
+.ingredient-card h4,
+.process-card h4,
+.tip-card h4,
+.issue-card h4,
+.resource-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 1rem 0 0.5rem;
+}
+
+.equipment-list,
+.ingredient-content ul,
+.process-content ul,
+.tip-content ul,
+.resource-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.equipment-list li,
+.ingredient-content li,
+.process-content li,
+.tip-content li,
+.resource-content li {
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.section-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.section-note p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.troubleshoot-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.troubleshoot-table th,
+.troubleshoot-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.troubleshoot-table th {
+    font-weight: 600;
+    color: #333;
+    background: #f8f8f8;
+}
+
+.troubleshoot-table td {
+    color: #666;
+}
+
+.troubleshoot-table tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .brewing-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .brewing-hero p {
+        font-size: 1.1rem;
+    }
+
+    .brewing-intro {
+        padding: 60px 20px;
+    }
+
+    .brewing-intro h2 {
+        font-size: 2rem;
+    }
+
+    .brewing-equipment,
+    .ingredients-section,
+    .brewing-process,
+    .advanced-tips,
+    .common-issues,
+    .resources {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .equipment-grid,
+    .ingredients-grid,
+    .process-grid,
+    .tips-grid,
+    .issues-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .equipment-card,
+    .ingredient-card,
+    .process-card,
+    .tip-card,
+    .issue-card,
+    .resource-card {
+        padding: 1.5rem;
+    }
+
+    .troubleshoot-table th,
+    .troubleshoot-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Contact Page Styles */
+.contact-page {
+    padding: 80px 20px 40px;
+    background: #f9f9f9;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.info-text > p:first-child {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hours-title, .contact-title {
+    color: #E31837;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+}
+
+.hours-container {
+    margin-bottom: 1.5rem;
+}
+
+.hours-row {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.hours-row .day {
+    width: 80px;
+    color: #333;
+}
+
+.hours-row .time {
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #333;
+}
+
+.contact-row .icon {
+    font-size: 1.25rem;
+    min-width: 24px;
+}
+
+.contact-row .address {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-notice {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-left: 4px solid #E31837;
+    background: #f8f8f8;
+}
+
+.donation-notice p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background: #E31837;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #c01428;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .hours-row {
+        font-size: 0.9rem;
+    }
+
+    .hours-row .day {
+        width: 60px;
+    }
+
+    .contact-row {
+        font-size: 0.9rem;
+    }
+}
+
+.tips-grid,
+.issues-grid,
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.advanced-tips,
+.common-issues,
+.resources {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.advanced-tips .container,
+.common-issues .container,
+.resources .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.resources-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.resource-group h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.resource-group h4 {
+    color: #E31837;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resource-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-group li {
+    padding: 0.25rem 0;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.resources-note {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .tips-grid,
+    .issues-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .advanced-tips,
+    .common-issues,
+    .resources {
+        padding: 60px 20px;
+    }
+
+    .resources-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .resource-group h3 {
+        font-size: 1.25rem;
+    }
+
+    .resource-group h4 {
+        font-size: 0.9rem;
+    }
+
+    .resource-group li {
+        font-size: 0.85rem;
     }
 } 

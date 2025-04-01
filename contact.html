@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Muxie Distributing Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-transparent">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="Muxie-Logo.png" alt="Muxie Distributing">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="our-beers.html" class="nav-link">Our Beers</a></li>
+                <li><a href="diy-brewing.html" class="nav-link">DIY Brewing</a></li>
+                <li><a href="party-planning.html" class="nav-link">Party Planning</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-text">
+                    <p>We would love to hear from you! You can reach us in a variety of ways, including the form on the right.</p>
+                    
+                    <h4 class="hours-title">Hours of Operation:</h4>
+                    <div class="hours-container">
+                        <div class="hours-row">
+                            <span class="day">M–F</span>
+                            <span class="time">8 a.m. – 5 p.m.</span>
+                        </div>
+                        <div class="hours-row">
+                            <span class="day">Sat</span>
+                            <span class="time">8 a.m. – 11 a.m.</span>
+                        </div>
+                    </div>
+
+                    <h4 class="contact-title">Contact Details:</h4>
+                    <div class="contact-details">
+                        <div class="contact-row">
+                            <span class="icon">📞</span>
+                            <span>Phone: 740-676-2065</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon">🖨️</span>
+                            <span>Fax: 740-676-9442</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon">📍</span>
+                            <div class="address">
+                                <span>5120 Guernsey St.</span>
+                                <span>Bellaire, OH 43906</span>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon">✉️</span>
+                            <span>Email: info@Muxie.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="donation-notice">
+                        <p>***We do not accept donation/sponsorship requests online. Please visit us in person with your request letter.***</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" required></textarea>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Muxie-Logo.png" alt="Muxie Distributing Co. Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-beers.html">Our Beers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Muxie Distributing Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

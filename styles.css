@@ -22,10 +22,16 @@ body {
     line-height: 1.6;
     color: var(--dark-color);
     overflow-x: hidden;
+    background: var(--light-color);
 }
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Custom Cursor */
@@ -122,27 +128,16 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-/* Hero Section */
+/* Hero Sections */
 .hero, .catalog-hero, .brewing-hero, .about-hero {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: url('Muxie-5-bwcolor-1100x825.jpg') no-repeat center center fixed;
+    background: url('Muxie-5-bwcolor-1100x825.jpg') no-repeat center center;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hero-overlay, .catalog-hero::before, .brewing-hero::before, .about-hero::before {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -164,7 +159,6 @@ h1, h2, h3, h4 {
     text-align: center;
     color: var(--light-color);
     padding: 0 2rem;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -225,6 +219,9 @@ h1, h2, h3, h4 {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mouse {
@@ -233,6 +230,7 @@ h1, h2, h3, h4 {
     border: 2px solid var(--light-color);
     border-radius: 15px;
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .wheel {
@@ -251,7 +249,7 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    gap: 0.5rem;
 }
 
 .arrows span {
@@ -261,7 +259,6 @@ h1, h2, h3, h4 {
     border-right: 2px solid var(--light-color);
     border-bottom: 2px solid var(--light-color);
     transform: rotate(45deg);
-    margin: -6px;
     animation: arrows 2s infinite;
 }
 
@@ -1315,5 +1312,296 @@ footer {
     
     .party-planning-page .hero-content p {
         font-size: 1.2rem;
+    }
+}
+
+/* Brewing Equipment Section */
+.brewing-equipment {
+    padding: 6rem 0;
+    background: var(--gray-color);
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+.equipment-card {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.equipment-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.equipment-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.equipment-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.equipment-list li:before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.equipment-list li:last-child {
+    border-bottom: none;
+}
+
+.equipment-note {
+    text-align: center;
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(227, 30, 36, 0.2);
+}
+
+.equipment-note p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .equipment-card {
+        padding: 1.5rem;
+    }
+    
+    .equipment-list li {
+        font-size: 1rem;
+    }
+    
+    .equipment-note {
+        margin: 2rem 1rem 0;
+        padding: 1.5rem;
+    }
+}
+
+/* Common Section Styles */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 1rem auto 0;
+}
+
+/* Card Grid Layout */
+.ingredients-grid,
+.equipment-grid,
+.process-grid,
+.tips-grid,
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* Card Styles */
+.ingredient-card,
+.equipment-card,
+.process-card,
+.tip-card,
+.resource-card {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.ingredient-card:hover,
+.equipment-card:hover,
+.process-card:hover,
+.tip-card:hover,
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Card Headers */
+.ingredient-card h3,
+.equipment-card h3,
+.process-card h3,
+.tip-card h3,
+.resource-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Subheaders */
+.ingredient-content h4,
+.equipment-content h4,
+.process-content h4,
+.tip-content h4 {
+    color: var(--dark-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Lists */
+.ingredient-content ul,
+.equipment-list,
+.process-content ul,
+.tip-content ul {
+    list-style: none;
+}
+
+.ingredient-content li,
+.equipment-list li,
+.process-content li,
+.tip-content li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.ingredient-content li:before,
+.equipment-list li:before,
+.process-content li:before,
+.tip-content li:before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.ingredient-content li:last-child,
+.equipment-list li:last-child,
+.process-content li:last-child,
+.tip-content li:last-child {
+    border-bottom: none;
+}
+
+/* Section Notes */
+.section-note {
+    text-align: center;
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(227, 30, 36, 0.2);
+}
+
+.section-note p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Section Backgrounds */
+.brewing-intro,
+.brewing-equipment,
+.ingredients-section,
+.brewing-process,
+.brewing-tips,
+.brewing-resources {
+    padding: 6rem 0;
+}
+
+.brewing-intro,
+.brewing-process,
+.brewing-resources {
+    background: var(--light-color);
+}
+
+.brewing-equipment,
+.ingredients-section,
+.brewing-tips {
+    background: var(--gray-color);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .ingredients-grid,
+    .equipment-grid,
+    .process-grid,
+    .tips-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .ingredient-card,
+    .equipment-card,
+    .process-card,
+    .tip-card,
+    .resource-card {
+        padding: 1.5rem;
+    }
+
+    .ingredient-content li,
+    .equipment-list li,
+    .process-content li,
+    .tip-content li {
+        font-size: 1rem;
+    }
+
+    .section-note {
+        margin: 2rem 1rem 0;
+        padding: 1.5rem;
     }
 } 
